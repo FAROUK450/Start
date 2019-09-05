@@ -1,0 +1,68 @@
+h1 
+{
+
+	color:Black;
+}
+
+ h2
+{
+
+	color:blue;
+}
+@media (min-width:500px){
+
+	body{
+
+	background-color:red;
+}
+
+h1::before{
+	content: "Welcome to my website";
+}
+}
+@media(max-width:499px){
+	body{
+
+	background-color:green;
+}
+h1::before{
+	content: "Welcome";
+}
+}
+
+@media print {
+.nice{
+	display:none;
+}
+}
+.itsflex
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.itsflex div{
+background-color: yellow;
+width: 200px;
+font-size: 20px;
+height: 100px;
+margin: 20px;
+padding: 10px;
+
+}
+
+.grid
+{
+	display: grid;
+	background-color: orange;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+
+padding: 10px;
+grid-template-columns: 100px 100px auto auto;
+}
+
+.grid-item
+{
+	background-color :white;
+	padding: 20px;
+}
